@@ -1,3 +1,5 @@
+from APITesting.ResourceFiles.configuration import *
+
 def addBookPayload(isbn):
     body = {
 

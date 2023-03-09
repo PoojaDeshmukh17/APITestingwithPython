@@ -22,7 +22,7 @@ addBookHeader = {"Content-Type":"application/json"}
 randomString = ''.join(random.choices(string.ascii_uppercase +
                              string.digits, k=randomStringSize))
 
-addBook_response = requests.post(addBookUrl, headers=addBookHeader, json=addBookPayload("Pooja_" + str(randomString)),)
+addBook_response = requests.post(addBookUrl, headers=addBookHeader, json=addBookPayload(str(randomString)),)
 
 # To convert the response into json format we used json():
 
@@ -48,7 +48,3 @@ print(res_json["msg"])
 assert res_json["msg"] == "book is successfully deleted"
 
 
-url = "https://api.github.com/user"
-response = requests.get(url,auth=('pooja.deshmukh.gs@gmail.com', 'SoftwareTester123$'))
-
-print(response.status_code)
