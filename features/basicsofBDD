@@ -1,0 +1,19 @@
+# BDD Framework: (behaviour-driven development)
+
+Cucumber is a officially supported BDD automation tool.
+In cucumber Behave is a third party tool which used in BDD framework in python
+Behave is used to creating features files
+
+1) Features contains collection of scenarios.
+-> 1 features consists of Given
+                          when
+                          Then
+     This format is called Gherkin language.
+
+# Installation of Behave ->
+1) Feature file supports only Pycharm professional edition
+2) In terminal enter -> pip install behave
+3) Select local interpreter
+
+
+

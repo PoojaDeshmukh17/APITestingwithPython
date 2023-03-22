@@ -22,7 +22,7 @@ cursorObj = connection.cursor()
 # fetchone() : Fetch only one record from the table         -> Return type: Tuple
 # fetchall() : Fetch all record from the table( where the cursor is present)   -> Return type: List of Tuple
 
-cursorObj.execute('SELECT * FROM company.department;')
+cursorObj.execute('SELECT * FROM company.department')
 
 # row1 = cursorObj.fetchone()
 # print(row1)

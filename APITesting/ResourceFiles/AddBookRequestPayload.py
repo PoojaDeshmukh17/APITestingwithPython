@@ -17,3 +17,14 @@ def deleteBookPayload(bookID):
 
 }
     return body
+
+
+def buildPayLoadFromDB(query):
+# creating a dic and send it to the main test:
+    addBody = {}
+    tp = getQuery(query)
+    addBody['name'] = tp[0]
+    addBody['isbn'] = tp[1]
+    addBody['aisle'] = tp[2]
+    addBody['author'] = tp[3]
+    return addBody
